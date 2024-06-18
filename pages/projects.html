@@ -6,39 +6,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="../assets/css/meyer-reset.css">
     <link rel="stylesheet" href="../assets/css/site.css">
-    <script src="https://kit.fontawesome.com/529e25cf3d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title> Arthur D'avila | Web Tech | Cert 4 Prog</title>
 </head>
 
 <body class="lg:bg-gray-200">
-<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800
-    text-gray-200">
-    <a class="flex flex-row justify-between lg:flex-none mb-1 title-font lg:mb-3 gap-2 ">
-        <h1 class="text-lg">Certificate IV in IT - Final Project</h1>
-        <i class="block lg:invisible fas fa-bars fa-2x right-0"></i>
-    </a>
-    <nav class="hidden lg:block mt-auto mb-auto">
-        <ul class="flex flex-row gap-4 w-full">
-            <li><a class="hover:text-white transition duration-500 ease-in-out pb-2"
-                   href="../index.html">Home</a></li>
-            <li><p>|</p></li>
-            <li><a class="hover:text-white transition duration-500 ease-in-out pb-2"
-                   href="about.html">About</a></li>
-            <li><p>|</p></li>
-            <li><a class="hover:text-white transition duration-500 ease-in-out pb-2"
-                   href="contact.html">Contact</a></li>
-            <li><p>|</p></li>
-            <li><a class="hover:text-white transition duration-500 ease-in-out pb-2"
-                   href="resume.html">Resumé</a></li>
-            <li><p>|</p></li>
-            <li><a class="hover:text-white transition duration-500 ease-in-out pb-2"
-                   href="#">Projects</a></li>
-            <li><p>|</p></li>
-            <li><a class="hover:text-white transition duration-500 ease-in-out pb-2"
-                   href="mywork.html">Sample Project</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="sticky top-0 flex items-center p-6 mx-auto gap-2 bg-gray-800 text-gray-200">
+        <h1 class="title-font">Certificate IV in IT (Programming) Web Tech Portfolio</h1>
+
+        <nav id="nav-menu" class="transition duration-600 ease-in grow flex justify-end flex-col lg:flex-row absolute
+                   lg:relative lg:justify-end gap-4 top-[-400%] lg:top-0 bg-gray-800 lg:bg-transparent w-full lg:w-auto
+                   mx-auto left-0 text-center">
+
+            <a class="hover:text-white transition duration-500 ease-in-out pb-2" href="../index.html">Home</a>
+            <p class="hidden lg:block">|</p>
+            <a class="hover:text-white transition duration-500 ease-in-out pb-2" href="about.html">About</a>
+            <p class="hidden lg:block">|</p>
+            <a class="hover:text-white transition duration-500 ease-in-out pb-2" href="contact.html">Contact</a>
+            <p class="hidden lg:block">|</p>
+            <a class="hover:text-white transition duration-500 ease-in-out pb-2" href="resume.html">Resumé</a>
+            <p class="hidden lg:block">|</p>
+            <a class="hover:text-white transition duration-500 ease-in-out pb-2">Projects</a>
+            <p class="hidden lg:block">|</p>
+            <a class="hover:text-white transition duration-500 ease-in-out pb-2" href="mywork.html">Sample Project</a>
+        </nav>
+        <div class="grow flex justify-end text-2xl lg:hidden ">
+            <ion-icon id="menu-icon" class="cursor-pointer" name="menu"></ion-icon>
+        </div>
+    </header>
+
+    <script>
+        document.querySelector("#menu-icon").addEventListener('click', ()=>{
+            let menu = document.getElementById("nav-menu");
+            menu.classList.toggle("top-[70px]");
+        });
+    </script>
 
 <main class="flex flex-col justify-between m-5 xl:w-4/5 lg:mx-auto bg-white lg:pb-8">
     <h1 class="mx-auto text-bold text-2xl mt-4">Projects Page</h1>
