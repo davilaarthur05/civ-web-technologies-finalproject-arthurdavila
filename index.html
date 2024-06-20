@@ -83,7 +83,7 @@
 
             </article>
 
-            <article class="m-5 mb-5 p-5 sm:w-full lg:w-2/5 lg:border lg:border-gray-600 lg:flex lg:flex-col
+            <article class="m-5 mb-5 p-5 sm:w-full lg:w-1/4 lg:border lg:border-gray-600 lg:flex lg:flex-col
             lg:gap-4 lg:p-10">
                 <section class="bg-gray-800 text-gray-200 p-4 -m-4 mb-2">
                     <h3 class="text-bold text-xl">Projects</h3>
@@ -98,7 +98,7 @@
 
             </article>
 
-            <article class="m-5 mb-5 p-5 sm:w-full lg:w-2/5 lg:border lg:border-gray-600 lg:flex lg:flex-col
+            <article class="m-5 mb-5 p-5 sm:w-full lg:w-1/4 lg:border lg:border-gray-600 lg:flex lg:flex-col
             lg:gap-4 lg:p-10">
                 <section class="bg-gray-800 text-gray-200 p-4 -m-4 mb-2">
                     <h3 class="text-bold text-xl">Sample Project</h3>
@@ -109,6 +109,32 @@
                         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </section>
+            </article>
+
+            <article class="m-5 mb-5 p-5 sm:w-full hidden lg:w-1/4 lg:border lg:border-gray-600 lg:flex lg:flex-col
+            lg:gap-4 lg:p-10">
+                <section class="bg-gray-800 text-gray-200 p-4 -m-4 mb-2">
+                    <h3 class="text-bold text-xl">Image Carousel</h3>
+                </section>
+                <section class="relative w-full max-w-lg overflow-hidden flex flex-col">
+                    <div class="carousel flex transition-transform duration-500">
+                        <div class="carousel-image min-w-full mt-auto mb-auto">
+                            <img src="./assets/images/programmingjoke.jpg" alt="Programming joke" class="w-full">
+                        </div>
+                        <div class="carousel-image min-w-full mt-auto mb-auto">
+                            <img src="./assets/images/htmljoke.jpg" alt="HTML joke" class="w-full">
+                        </div>
+                        <div class="carousel-image min-w-full mt-auto mb-auto">
+                            <img src="./assets/images/usererrorjoke.jpg" alt="User Error joke" class="w-full">
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-around mt-4">
+                        <button class="carousel-control prev rounded-full p-3 cursor-pointer text-white bg-gray-800"
+                                onclick="prevImage()"><</button>
+                        <button class="carousel-control next rounded-full p-3 cursor-pointer text-white bg-gray-800"
+                                onclick="nextImage()">></button>
+                    </div>
                 </section>
             </article>
         </div>
